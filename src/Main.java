@@ -1,10 +1,10 @@
-import model.FileOperations;
+import controller.InvoiceGeneratorController;
 
 public class Main {
     public static void main(String[] args) {
         System.out.println("Hello world!!!!!!!!!!!!!!!!!");
 
-        FileOperations fileOperations = new FileOperations();
-        fileOperations.readFile();
+        InvoiceGeneratorController invoiceGeneratorController = new InvoiceGeneratorController();
+        invoiceGeneratorController.readFile();
     }
 }
