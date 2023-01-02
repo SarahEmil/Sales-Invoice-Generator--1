@@ -20,7 +20,7 @@ public class InvoiceGeneratorController {
         String line = "";
         String splitBy = ",";
         try {
-            String invoiceHeadersFilePath = new File("").getAbsolutePath() + "\\InvoiceHeaders.csv";
+            String invoiceHeadersFilePath = new File("").getAbsolutePath() + "/InvoiceHeaders.csv";
             br = new BufferedReader(new FileReader(invoiceHeadersFilePath));
         } catch (FileNotFoundException ex) {
             System.err.println("Invoice Header File is not Found");
@@ -43,7 +43,7 @@ public class InvoiceGeneratorController {
             invoices.add(invoice);
         }
         try {
-            String invoiceLinesFilePath = new File("").getAbsolutePath() + "\\InvoiceLines.csv";
+            String invoiceLinesFilePath = new File("").getAbsolutePath() + "/InvoiceLines.csv";
             br = new BufferedReader(new FileReader(invoiceLinesFilePath));
         } catch (FileNotFoundException ex) {
             System.err.println("Invoice Line File is not Found");
